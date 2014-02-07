@@ -1,0 +1,11 @@
+<h1>{{team.name}}</h1>
+<span class="members">{{team.members}}</span>
+<h2>Latest Games</h2>
+<ul>
+	<li ng-repeat="result in team.score">
+		<h2>{{result.against}}</h2>
+		<h3>{{result.status || uppercase}}</h3>
+		<h4>{{result.score}}</h4>
+	</li>
+</ul>
+<h2>Win Ratio: {{team.winRatio}}</h2>

@@ -1,0 +1,22 @@
+{
+	"name": "Bank",
+	"members": "Olivier Chank, Benoit-Lavoie-Lamer",
+	"score": [
+		{
+			"against": "Ta mere",
+			"status": "won",
+			"score": "4-0"
+		},
+		{
+			"against": "Ta mere encore",
+			"status": "lost",
+			"score": "2-4"
+		},
+		{
+			"against": "Taa mere",
+			"status": "won",
+			"score": "4-2"
+		}
+	],
+	"winRatio": 4.2
+}

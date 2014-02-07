@@ -1,0 +1,10 @@
+<input type="text" ng-model="q">
+
+Hey {{q}}
+
+<section>
+	<article ng-repeat="question in questions | filter:q" >
+		<h2>{{question.question}}</h2>
+		<p>{{question.answer}}</p>
+	</article>
+</section>
