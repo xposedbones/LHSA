@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('testApp')
-  .controller 'navigation', ($scope) ->
+  .controller 'navigation', ($scope, $location) ->
     $scope.links = [
       {
         name: "Home"
@@ -12,6 +12,9 @@ angular.module('testApp')
         path: "/stats"
       }
     ]
+    $scope.isActive = (route) ->
+      route == $location.path()
+
   .controller 'MainCtrl', ($scope) ->
     $scope.teams = [
       {
