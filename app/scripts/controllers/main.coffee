@@ -8,7 +8,7 @@ angular.module('testApp')
         path: "/"
       },
       {
-        name: "Stats - Table"
+        name: "Classement"
         path: "/stats"
       }
     ]
@@ -74,3 +74,7 @@ angular.module('testApp')
   .controller "detail", ($scope, $routeParams, $http) ->
     $http.get('details/' + $routeParams.teamName + '.json').success (data)->
       $scope.team = data
+  .controller "stats", ($scope, $http) ->
+    $http.get("details/all.json").success (data) ->
+      $scope.data = data
+      $scope.sortBy = '-stats.pts'

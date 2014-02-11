@@ -12,8 +12,8 @@ angular.module('testApp', [
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
       .when '/stats',
-        templateUrl: 'views/stats.html'
-        controller: 'MainCtrl'
+        templateUrl: 'views/stats_all.html'
+        controller: 'stats'
       .when '/detailed',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'

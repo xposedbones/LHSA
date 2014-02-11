@@ -1,0 +1,10 @@
+Download from Github,
+
+run “npm install” on the root of the LHSA folder
+run “bower install” on the root of the LHSA folder
+
+you need NodeJS, grunt, and compass
+
+to install compass you need ruby, then run the command “gem install compass”
+
+YAY
