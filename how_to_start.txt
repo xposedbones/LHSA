@@ -7,4 +7,6 @@ you need NodeJS, grunt, and compass
 
 to install compass you need ruby, then run the command “gem install compass”
 
+grunt serve
+
 YAY
