@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Christiandré",
+    "img": "test",
+    "team": "Rangers de New York"
+  },
+  {
+    "name": "Brulvain",
+    "img": "test",
+    "team": "Ducks d'Anaheim"
+  },
+  {
+    "name": "Bank",
+    "img": "test",
+    "team": "Maple Leafs de Toronto"
+  },
+  {
+    "name": "Guillex",
+    "img": "test",
+    "team": "Islanders de New York"
+  },
+  {
+    "name": "Nicholis",
+    "img": "test",
+    "team": "Stars de Dallas"
+  }
+]

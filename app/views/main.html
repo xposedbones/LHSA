@@ -1,6 +1,6 @@
 <div>
 	<ul class="team_listing">
-	  <li ng-repeat="team in teams" ng-hide="$first">
+	  <li ng-repeat="team in teams">
 	    <a href="#/detailed/{{team.name | lowercase}}"><img ng-src="{{team.img}}" alt="">
 	      <h2>{{team.name}}</h2>
 	      <span class="team">{{team.team}}</span></a>

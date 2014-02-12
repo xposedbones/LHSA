@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Classement",
+    "path": "/stats"
+  },
+  {
+    "name": "ClassDFGDSFGDFGement",
+    "path": "/stats"
+  }
+]
