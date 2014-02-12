@@ -18,57 +18,41 @@ angular.module('LHSA')
   .controller 'MainCtrl', ($scope) ->
     $scope.teams = [
       {
-        name: "BANddK"
+        name: "Christiandré"
         img: "test"
-        team: "Mapple Leaf de toronto"
+        team: "Rangers de New York"
         win: 10
         lost: 5
         shotPerGame: 20
       },
       {
-        name: "BAdNK"
+        name: "Brulvain"
         img: "test"
-        team: "Mapple Leaf de toronto"
+        team: "Ducks d'Anaheim"
         win: 10
         lost: 5
         shotPerGame: 20
       },
       {
-        name: "BANK"
+        name: "Bank"
         img: "test"
-        team: "Mapple Leaf de toronto"
+        team: "Maple Leafs de Toronto"
         win: 10
         lost: 5
         shotPerGame: 20
       },
       {
-        name: "BANK"
+        name: "Guillex"
         img: "test"
-        team: "Mapple Leaf de toronto"
+        team: "Islanders de New York"
         win: 10
         lost: 5
         shotPerGame: 20
       },
       {
-        name: "BANK"
+        name: "Nicholis"
         img: "test"
-        team: "Mapple Leaf de toronto"
-        win: 10
-        lost: 5
-        shotPerGame: 20
-      },
-      {
-        name: "BANK"
-        img: "test"
-        team: "Mapple Leaf de toronto"
-        win: 10
-        lost: 5
-        shotPerGame: 20
-      },
-      {
-        name: "BANK"
-        img: "test"
-        team: "Mapple Leaf de toronto"
+        team: "Stars de Dallas"
         win: 10
         lost: 5
         shotPerGame: 20
