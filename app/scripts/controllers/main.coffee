@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('testApp')
+angular.module('LHSA')
   .controller 'navigation', ($scope, $location) ->
     $scope.links = [
       {

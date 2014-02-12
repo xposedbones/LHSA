@@ -1,9 +1,10 @@
 'use strict'
 
-angular.module('testApp', [
+angular.module('LHSA', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
+  'ngAnimate',
   'ngRoute'
 ])
   .config ($routeProvider) ->

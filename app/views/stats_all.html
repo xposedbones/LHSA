@@ -1,33 +1,35 @@
-<table class="" cellspacing="0" cellpadding="0">
-	<thead>
-		<tr>
-			<th><a href="" ng-click="sortBy='name'; reverse=!reverse; test()">équipe</a></th>
-			<th><a href="" ng-click="sortBy= 'stats.mj'; reverse=!reverse">mj</a></th>
-			<th><a href="" ng-click="sortBy='stats.v'; reverse=!reverse">v</a></th>
-			<th><a href="" ng-click="sortBy='stats.d'; reverse=!reverse">d</a></th>
-			<th><a href="" ng-click="sortBy='stats.dp'; reverse=!reverse">dp</a></th>
-			<th class='active'><a href="" ng-click="sortBy='stats.pts'; reverse=!reverse">pts</a></th>
-			<th><a href="" ng-click="sortBy='stats.bp'; reverse=!reverse">bp</a></th>
-			<th><a href="" ng-click="sortBy='stats.bc'; reverse=!reverse">bc</a></th>
-			<th><a href="" ng-click="sortBy='stats.diff'; reverse=!reverse">diff</a></th>
-			<th><a href="" ng-click="sortBy='stats.dom'; reverse=!reverse">dom</a></th>
-			<th><a href="" ng-click="sortBy='stats.etr'; reverse=!reverse">étr</a></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="team in data | orderBy:sortBy:reverse">
-			<td><a href="#/detailed/{{team.name}}">{{team.name}}</a></td>
-			<td>{{team.stats.mj}}</td>
-			<td>{{team.stats.v}}</td>
-			<td>{{team.stats.d}}</td>
-			<td>{{team.stats.dp}}</td>
-			<td class='active'>{{team.stats.pts}}</td>
-			<td>{{team.stats.bp}}</td>
-			<td>{{team.stats.bc}}</td>
-			<td>{{team.stats.diff}}</td>
-			<td>{{team.stats.dom}}</td>
-			<td>{{team.stats.etr}}</td>
-			<td>{{team.stats.}}</td>
-		</tr>
-	</tbody>
-</table>
+<div>
+	<table class="" cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th><a href="" ng-click="sortBy='name'; reverse=!reverse; test()">équipe</a></th>
+				<th><a href="" ng-click="sortBy= 'stats.mj'; reverse=!reverse">mj</a></th>
+				<th><a href="" ng-click="sortBy='stats.v'; reverse=!reverse">v</a></th>
+				<th><a href="" ng-click="sortBy='stats.d'; reverse=!reverse">d</a></th>
+				<th><a href="" ng-click="sortBy='stats.dp'; reverse=!reverse">dp</a></th>
+				<th class='active'><a href="" ng-click="sortBy='stats.pts'; reverse=!reverse">pts</a></th>
+				<th><a href="" ng-click="sortBy='stats.bp'; reverse=!reverse">bp</a></th>
+				<th><a href="" ng-click="sortBy='stats.bc'; reverse=!reverse">bc</a></th>
+				<th><a href="" ng-click="sortBy='stats.diff'; reverse=!reverse">diff</a></th>
+				<th><a href="" ng-click="sortBy='stats.dom'; reverse=!reverse">dom</a></th>
+				<th><a href="" ng-click="sortBy='stats.etr'; reverse=!reverse">étr</a></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="team in data | orderBy:sortBy:reverse" >
+				<td><a href="#/detailed/{{team.name}}">{{team.name}}</a></td>
+				<td>{{team.stats.mj}}</td>
+				<td>{{team.stats.v}}</td>
+				<td>{{team.stats.d}}</td>
+				<td>{{team.stats.dp}}</td>
+				<td class='active'>{{team.stats.pts}}</td>
+				<td>{{team.stats.bp}}</td>
+				<td>{{team.stats.bc}}</td>
+				<td>{{team.stats.diff}}</td>
+				<td>{{team.stats.dom}}</td>
+				<td>{{team.stats.etr}}</td>
+				<td>{{team.stats.}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
