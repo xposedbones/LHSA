@@ -7,15 +7,18 @@ angular.module('LHSA')
     $scope.isActive = (route) ->
       route == $location.path()
 
-  .controller 'MainCtrl', ($scope, $http) ->
+  .controller 'home', ($scope, $http) ->
     $http.get("JSON/overview/overview.json").success (data) ->
       $scope.teams = data
 
   .controller "detail", ($scope, $routeParams, $http) ->
     $http.get('JSON/details/' + $routeParams.teamName + '.json').success (data)->
       $scope.team = data
-      
+
   .controller "stats", ($scope, $http) ->
     $http.get("JSON/details/all.json").success (data) ->
       $scope.data = data
       $scope.sortBy = '-stats.pts'
+      $scope.criss = () ->
+        return () ->
+          alert("asdasdasdasd")        

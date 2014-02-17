@@ -18,7 +18,8 @@
 		<tbody>
 			<tr ng-repeat="team in data | orderBy:sortBy:reverse" >
 				<td><a href="#/detailed/{{team.name}}">{{team.name}}</a></td>
-				<td>{{team.stats.mj}}</td>
+				<td ng-repeat="(key, val) in team.stats | orderBy:'$index'">{{val}}</td>
+				<!-- <td>{{team.stats.mj}}</td>
 				<td>{{team.stats.v}}</td>
 				<td>{{team.stats.d}}</td>
 				<td>{{team.stats.dp}}</td>
@@ -28,7 +29,7 @@
 				<td>{{team.stats.diff}}</td>
 				<td>{{team.stats.dom}}</td>
 				<td>{{team.stats.etr}}</td>
-				<td>{{team.stats.}}</td>
+				<td>{{team.stats.}}</td> -->
 			</tr>
 		</tbody>
 	</table>

@@ -2,26 +2,26 @@
   {
     "name": "Christiandré",
     "img": "test",
-    "team": "Rangers de New York"
+    "teamImg": "/images/testteam.png"
   },
   {
     "name": "Brulvain",
     "img": "test",
-    "team": "Ducks d'Anaheim"
+    "teamImg": ""
   },
   {
     "name": "Bank",
     "img": "test",
-    "team": "Maple Leafs de Toronto"
+    "teamImg": ""
   },
   {
     "name": "Guillex",
     "img": "test",
-    "team": "Islanders de New York"
+    "teamImg": ""
   },
   {
     "name": "Nicholis",
     "img": "test",
-    "team": "Stars de Dallas"
+    "teamImg": ""
   }
 ]

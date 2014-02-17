@@ -11,7 +11,7 @@ angular.module('LHSA', [
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
+        controller: 'home'
       .when '/stats',
         templateUrl: 'views/stats_all.html'
         controller: 'stats'
