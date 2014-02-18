@@ -47,7 +47,8 @@ nav{
     
     td{height:130px; color:#454545}
     td:nth-child(2n){background:#dddddd}
-    td.active, th.active{ background:white; *{color:black}}
+    td.active, th.active{ background:white; *{color:black;}}
+    td.active{font-size:24px;}
 }
 
 a.active{color:red;}
