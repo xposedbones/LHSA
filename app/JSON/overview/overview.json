@@ -1,27 +1,27 @@
 [
   {
     "name": "Christiandré",
-    "img": "test",
+    "img": "/images/sylvandre.png",
     "teamImg": "/images/testteam.png"
   },
   {
     "name": "Brulvain",
-    "img": "test",
+    "img": "/images/guilouis.png",
     "teamImg": ""
   },
   {
     "name": "Bank",
-    "img": "test",
+    "img": "/images/brunick.png",
     "teamImg": ""
   },
   {
     "name": "Guillex",
-    "img": "test",
+    "img": "/images/sylric.png",
     "teamImg": ""
   },
   {
     "name": "Nicholis",
-    "img": "test",
+    "img": "/images/christin.png",
     "teamImg": ""
   }
 ]

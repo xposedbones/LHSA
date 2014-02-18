@@ -1,11 +1,11 @@
-<div>
-	<ul class="team_listing">
+<div style="height:100%;">
+	<ul class="team_listing active">
 	  <li ng-repeat="team in teams">
-	    <a href="#/detailed/{{team.name | lowercase}}">
-	    	<img ng-src="{{team.img}}" alt="" class="profile">
-	    	<img ng-src="{{team.teamImg}}" alt="" class="team">
-	      <h2>{{team.name}}</h2>
-	      <span class="team">{{team.team}}</span></a>
+	    <a href="#/detailed/{{team.name | lowercase}}" style="background-image:url({{team.img}})">
+	    	
+	    	<!-- <img ng-src="{{team.teamImg}}" alt="" class="team"> -->
+	      <!-- <h2>{{team.name}}</h2>
+	      <span class="team">{{team.team}}</span></a> -->
 	  </li>
 	</ul>
 </div>
