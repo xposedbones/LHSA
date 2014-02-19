@@ -1,6 +1,15 @@
 {
 	"name": "Bank",
-	"members": "Olivier Chank, Benoit-Lavoie-Lamer",
+	"members": [
+		{
+			"name": "AWESOME DUDE",
+			"url": "benoit"
+		},
+		{
+			"name": "chank",
+			"url": "chank"
+		}
+	],
 	"score": [
 		{
 			"against": "Ta mere",

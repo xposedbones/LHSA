@@ -7,16 +7,23 @@ angular.module('LHSA')
     $scope.isActive = (route) ->
       route == $location.path()
 
-  .controller 'home', ($scope, $http) ->
+  .controller 'equipeCtrl', ($scope, $http) ->
     $http.get("JSON/overview/overview.json").success (data) ->
       $scope.teams = data
     $scope.$on('$viewContentLoaded', ->
-      home()
+      equipe()
     )
 
   .controller "detail", ($scope, $routeParams, $http) ->
     $http.get('JSON/details/' + $routeParams.teamName + '.json').success (data)->
       $scope.team = data
+    $scope.$on('$viewContentLoaded', ->
+      detail()
+    )
+
+  .controller "membreInfo", ($scope, $routeParams, $http) ->
+    $http.get('JSON/details/membre/' + $routeParams.membreName + '.json').success (data)->
+      $scope.membre = data
     $scope.$on('$viewContentLoaded', ->
       detail()
     )
@@ -33,14 +40,13 @@ angular.module('LHSA')
 #
 # FUNCTION
 #
-home = () ->
+equipe = () ->
   console.log "Home is loaded"
 
-detail = () ->
+detail = (test) ->
   console.log "Detail page is loaded"
 
 stats = () ->
-  console.log "stats page is loaded"
   $("th").click ->
     #get the index of the clicked element
     $(this).toggleClass("asc")

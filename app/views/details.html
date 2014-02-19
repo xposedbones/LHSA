@@ -1,5 +1,12 @@
 <h1>{{team.name}}</h1>
-<span class="members">{{team.members}}</span>
+<div class="members">
+	<ul>
+		<li ng-repeat="member in team.members">
+			<a  href="#/equipe/membre/{{member.url}}">{{member.name}}</a>
+		</li>
+	</ul>
+	
+</div>
 <h2>Latest Games</h2>
 <ul>
 	<li ng-repeat="result in team.score">
