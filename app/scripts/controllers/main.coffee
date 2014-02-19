@@ -55,9 +55,10 @@ detail = (test) ->
   console.log "Detail page is loaded"
   console.log test
   ctx = $("#ctx").get(0).getContext("2d")
-  options = {}
-  options.animateRotate = true
-  options.animateScale = true
+  options = {
+    animateRotate: true
+    segmentShowStroke : 0
+  }
   test = new Chart(ctx).Doughnut(test, options)
   
 
