@@ -58,6 +58,7 @@ detail = (stats) ->
   options = {
     animateRotate: true
     segmentShowStroke : 0
+    percentageInnerCutout : 75
   }
   test = new Chart(ctx).Doughnut(stats.pie, options)
   
