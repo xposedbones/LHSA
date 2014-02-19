@@ -51,15 +51,15 @@ member = () ->
 team = () ->
   console.log "team is loaded"
 
-detail = (test) ->
+detail = (stats) ->
   console.log "Detail page is loaded"
-  console.log test
+  console.log stats.donut
   ctx = $("#ctx").get(0).getContext("2d")
   options = {
     animateRotate: true
     segmentShowStroke : 0
   }
-  test = new Chart(ctx).Doughnut(test, options)
+  test = new Chart(ctx).Doughnut(stats.pie, options)
   
 
 stats = () ->

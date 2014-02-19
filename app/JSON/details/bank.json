@@ -28,14 +28,27 @@
 		}
 	],
 	"winRatio": 4.2,
-	"stats": [
-	{
-		"value": 30,
-		"color":"#ff0000"
-	},
-	{
-		"value" : 50,
-		"color" : "#E2EAE9"
-	}
-	]
+	"stats": {
+			"donut": [
+				{
+					"value": 30,
+					"color":"#ff0000"
+				},
+				{
+					"value" : 50,
+					"color" : "#E2EAE9"
+				}
+			],
+			"pie": [
+				{
+					"value": 50,
+					"color":"#ff0000"
+				},
+				{
+					"value" : 50,
+					"color" : "#E2EAE9"
+				}
+			]
+		}
+	
 }
