@@ -2,11 +2,11 @@
 	"name": "Bank",
 	"members": [
 		{
-			"name": "AWESOME DUDE",
+			"name": "Benoit",
 			"url": "benoit"
 		},
 		{
-			"name": "chank",
+			"name": "Chank",
 			"url": "chank"
 		}
 	],
@@ -36,7 +36,7 @@
 				},
 				{
 					"value" : 50,
-					"color" : "#E2EAE9"
+					"color" : "#363636"
 				}
 			],
 			"pie": [

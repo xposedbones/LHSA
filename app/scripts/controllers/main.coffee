@@ -59,8 +59,10 @@ detail = (stats) ->
     animateRotate: true
     segmentShowStroke : 0
     percentageInnerCutout : 75
+    animationEasing : "easeOutQuart"
+    animationSteps : 50
   }
-  test = new Chart(ctx).Doughnut(stats.pie, options)
+  test = new Chart(ctx).Doughnut(stats.donut, options)
   
 
 stats = () ->
