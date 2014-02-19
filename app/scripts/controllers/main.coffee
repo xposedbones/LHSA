@@ -15,10 +15,14 @@ angular.module('LHSA')
     )
 
   .controller "detail", ($scope, $routeParams, $http) ->
+    
     $http.get('JSON/details/' + $routeParams.teamName + '.json').success (data)->
       $scope.team = data
+     
+      detail(data.stats)
+      #$scope.stats = data.stats
     $scope.$on('$viewContentLoaded', ->
-      detail()
+      
     )
 
   .controller "memberInfo", ($scope, $routeParams, $http) ->
@@ -49,7 +53,13 @@ team = () ->
 
 detail = (test) ->
   console.log "Detail page is loaded"
-
+  console.log test
+  ctx = $("#ctx").get(0).getContext("2d")
+  options = {}
+  options.animateRotate = true
+  options.animateScale = true
+  test = new Chart(ctx).Doughnut(test, options)
+  
 
 stats = () ->
   $("th").click ->
