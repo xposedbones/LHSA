@@ -11,16 +11,16 @@ angular.module('LHSA', [
     $routeProvider
       .when '/',
         templateUrl: 'views/home.html'
-        controller: 'home'
+        controller: 'detail'
       .when '/stats',
         templateUrl: 'views/stats_all.html'
         controller: 'stats'
       .when '/equipe',
         templateUrl: 'views/equipe.html'
-        controller: 'equipeCtrl'
+        controller: 'teamCtrl'
       .when '/equipe/:teamName',
         templateUrl: "views/details.html"
         controller: 'detail'
-      .when '/equipe/membre/:membreName',
+      .when '/equipe/membre/:memberName',
         templateUrl: "views/detailMember.html"
-        controller: "membreInfo"
+        controller: "memberInfo"
