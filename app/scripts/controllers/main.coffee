@@ -55,13 +55,13 @@ detail = (stats) ->
   console.log "Detail page is loaded"
   console.log stats.donut
   ctx = $("#ctx").get(0).getContext("2d")
-  options = {
+  options = 
     animateRotate: true
     segmentShowStroke : 0
     percentageInnerCutout : 75
     animationEasing : "easeOutQuart"
     animationSteps : 50
-  }
+  
   test = new Chart(ctx).Doughnut(stats.donut, options)
   
 
